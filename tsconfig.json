@@ -1,28 +1,21 @@
 {
-    "compilerOptions": {
-      "module": "System",
-      "noImplicitAny": false,
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "sourceMap": true,
-      "outFile": "../../built/local/tsc.js",
-      "outDir": "/dist"
-    },
-    "include": ["src/**/*"],
-    "exclude": ["**/*.spec.ts"],
-    "files": [
-      "core.ts",
-      "sys.ts",
-      "types.ts",
-      "scanner.ts",
-      "parser.ts",
-      "utilities.ts",
-      "binder.ts",
-      "checker.ts",
-      "emitter.ts",
-      "program.ts",
-      "commandLineParser.ts",
-      "tsc.ts",
-      "diagnosticInformationMap.generated.ts"
-    ]
-  }
+  "compilerOptions": {
+    "module": "commonJS",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": false,
+    "target": "ES2022",
+    "allowSyntheticDefaultImports":true,
+    "forceConsistentCasingInFileNames": true
+
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+, "webpack.config.js"  ]
+}

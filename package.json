@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc index.ts && node dist/index.js"
+    "start": "npx tsc && node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
     "url": "https://github.com/yuri184senac/javascript-estrutura-de-dados/issues"
   },
   "homepage": "https://github.com/yuri184senac/javascript-estrutura-de-dados#readme",
-  "dependencies": {
+  "devDependencies": {
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
 }
