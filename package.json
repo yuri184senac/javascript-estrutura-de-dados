@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "serve": "webpack && webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc && node dist/index.js",
+    "start": "npx tsc && node dist/src/index.js",
     "build": "webpack"
   },
   "repository": {
